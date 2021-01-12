@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c906ca8b-2a01-41bd-acbb-ea564361d947" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" afterDir="false" />
-    </list>
+    <list default="true" id="c906ca8b-2a01-41bd-acbb-ea564361d947" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +103,7 @@
       <workItem from="1610349050672" duration="3255000" />
       <workItem from="1610354625222" duration="6237000" />
       <workItem from="1610368177769" duration="3846000" />
-      <workItem from="1610418478949" duration="4426000" />
+      <workItem from="1610418478949" duration="4764000" />
     </task>
     <task id="LOCAL-00001" summary="1、修改了FlightInfo类，增加了setType和totalSet类&#10;2、增加了IFlightDao接口">
       <created>1610423508756</created>
@@ -116,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610423508756</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1、修改了FlightInfo类，删减了totalSet属性&#10;2、修改了数据库，增加了数据字典来表示座位">
+      <created>1610438720542</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610438720542</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,17 +127,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1、修改了FlightInfo类，增加了setType和totalSet类&#10;2、增加了IFlightDao接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、修改了FlightInfo类，增加了setType和totalSet类&#10;2、增加了IFlightDao接口" />
+    <MESSAGE value="1、修改了FlightInfo类，删减了totalSet属性&#10;2、修改了数据库，增加了数据字典来表示座位" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、修改了FlightInfo类，删减了totalSet属性&#10;2、修改了数据库，增加了数据字典来表示座位" />
   </component>
   <component name="WindowStateProjectService">
     <state x="660" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1610367678242">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="660" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1610367678242" />
-    <state x="327" y="20" key="CommitChangelistDialog2" timestamp="1610438609885">
+    <state x="519" y="14" width="800" height="841" key="CommitChangelistDialog2" timestamp="1610438719150">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="327" y="20" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610438609885" />
+    <state x="519" y="14" width="800" height="841" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610438719150" />
     <state x="599" y="196" key="FileChooserDialogImpl" timestamp="1610368218706">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

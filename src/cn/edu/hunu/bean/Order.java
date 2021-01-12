@@ -1,6 +1,5 @@
-package cn.edu.hunu.OrderPlaneTicketSystem;
+package cn.edu.hunu.bean;
 
-import java.util.List;
 import java.util.Set;
 
 public class Order {

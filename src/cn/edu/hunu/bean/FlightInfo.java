@@ -1,4 +1,4 @@
-package cn.edu.hunu.OrderPlaneTicketSystem;
+package cn.edu.hunu.bean;
 
 import javax.xml.crypto.Data;
 
@@ -6,6 +6,8 @@ public class FlightInfo {
     private String id;//
     private String type; //单程，双程
     private String planeModel; //飞机型号；
+    private String setType;
+    private int totalSetNum;
     private String departurePlace; //出发地
     private String destination; //目的地
     private Data departureTime; //出发时间

@@ -1,4 +1,4 @@
-package cn.edu.hunu.OrderPlaneTicketSystem;
+package cn.edu.hunu.bean;
 
 import javax.xml.crypto.Data;
 

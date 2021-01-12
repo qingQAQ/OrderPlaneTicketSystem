@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c906ca8b-2a01-41bd-acbb-ea564361d947" name="Default Changelist" comment="" />
+    <list default="true" id="c906ca8b-2a01-41bd-acbb-ea564361d947" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/edu/hunu/dao/impl/FlightDaoIml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/OrderPlaneTicketSystem/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/OrderPlaneTicketSystem/FlightInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/OrderPlaneTicketSystem/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/OrderPlaneTicketSystem/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,9 +53,22 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.MainUI">
+    <configuration name="MainUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.edu.hunu.UI.MainUI" />
+      <module name="OrderPlaneTicketSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.hunu.UI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MethodDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.hunu.OrderPlaneTicketSystem.MethodDemo" />
       <module name="OrderPlaneTicketSystem" />
@@ -73,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainUI" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.MethodDemo" />
       </list>
@@ -103,7 +128,7 @@
       <workItem from="1610349050672" duration="3255000" />
       <workItem from="1610354625222" duration="6237000" />
       <workItem from="1610368177769" duration="3846000" />
-      <workItem from="1610418478949" duration="4764000" />
+      <workItem from="1610418478949" duration="13621000" />
     </task>
     <task id="LOCAL-00001" summary="1、修改了FlightInfo类，增加了setType和totalSet类&#10;2、增加了IFlightDao接口">
       <created>1610423508756</created>
@@ -119,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610438720542</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1、修改了FlightInfo类，删减了totalSet属性&#10;2、修改了数据库，增加了数据字典来表示座位">
+      <created>1610438850027</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610438850027</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,14 +163,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="1、修改了FlightInfo类，删减了totalSet属性&#10;2、修改了数据库，增加了数据字典来表示座位" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="660" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1610367678242">
+    <state x="660" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1610453439032">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="660" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1610367678242" />
-    <state x="519" y="14" width="800" height="841" key="CommitChangelistDialog2" timestamp="1610438719150">
+    <state x="660" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1610453439032" />
+    <state x="519" y="14" width="800" height="841" key="CommitChangelistDialog2" timestamp="1610438848777">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="519" y="14" width="800" height="841" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610438719150" />
+    <state x="519" y="14" width="800" height="841" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610438848777" />
     <state x="599" y="196" key="FileChooserDialogImpl" timestamp="1610368218706">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -155,30 +187,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="566" y="133" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1610368344359" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1610373269205">
+    <state width="1340" height="48" key="GridCell.Tab.0.bottom" timestamp="1610454599162">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610373269205" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1610373269205">
+    <state width="1340" height="48" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610454599162" />
+    <state width="1340" height="48" key="GridCell.Tab.0.center" timestamp="1610454599162">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610373269205" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1610373269205">
+    <state width="1340" height="48" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610454599162" />
+    <state width="1340" height="48" key="GridCell.Tab.0.left" timestamp="1610454599162">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610373269205" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1610373269205">
+    <state width="1340" height="48" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610454599162" />
+    <state width="1340" height="48" key="GridCell.Tab.0.right" timestamp="1610454599162">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610373269205" />
-    <state x="372" y="143" key="SettingsEditor" timestamp="1610371891395">
+    <state width="1340" height="48" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610454599162" />
+    <state x="336" y="71" key="SettingsEditor" timestamp="1610452823905">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="372" y="143" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610371891395" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1610423718638">
+    <state x="336" y="71" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610452823905" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1610438906939">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1610423718638" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1610438906939" />
     <state x="593" y="94" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610352792934">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

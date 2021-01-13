@@ -4,11 +4,12 @@ import cn.edu.hunu.bean.FlightInfo;
 import cn.edu.hunu.bll.IFlightService;
 import cn.edu.hunu.bll.impl.FlightServiceImpl;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 import java.util.UUID;
 
 public class MainUI {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         Scanner input = new Scanner(System.in);
 
         while(true){
@@ -22,8 +23,9 @@ public class MainUI {
 
             int choice = input.nextInt();
             if(choice == 1){
-                String id = UUID.randomUUID().toString();
-                System.out.println(id.replace("-", ""));
+                String uuid = UUID.randomUUID().toString();
+                System.out.println(uuid.replace("-", ""));
+                String id=uuid.replace("-", "");
 
                 System.out.print("请输入航班编号：");
                 String flightId = input.next();
@@ -41,9 +43,16 @@ public class MainUI {
                         departurePlace,destination,departureTime);
 
                 IFlightService iFlightService = new FlightServiceImpl();
-                iFlightService.insertFlight(flightInfo);
+                try {
+                    iFlightService.insertFlight(flightInfo);
+                } catch (SQLException e) {
+                    String erromessage = e.getMessage();
+                    System.out.println(erromessage);
+                    e.printStackTrace();
+                }
 
             }
+
 
         }
     }

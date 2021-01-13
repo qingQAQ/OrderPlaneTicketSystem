@@ -1,61 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c906ca8b-2a01-41bd-acbb-ea564361d947" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/edu/hunu/dao/impl/FlightDaoIml.java" afterDir="false" />
+    <list default="true" id="64b5d862-c8cd-4093-abc3-b3e779122c84" name="Default Changelist" comment="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ojdbc6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/UI/MainUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/FlightInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/IFlightService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/impl/FlightServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/IFlightDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/impl/FlightDaoIml.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/crebas (1).sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/OrderPlaneTicketSystem/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/OrderPlaneTicketSystem/FlightInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/OrderPlaneTicketSystem/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/OrderPlaneTicketSystem/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderPlaneTicketSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderPlaneTicketSystem.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/dao/IFlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/dao/IFlightDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/dao/impl/FlightDaoIml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/dao/impl/FlightDaoIml.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="package-info" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
     </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_COMMON_BRANCH" value="master" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="SYNC" />
-  </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="F:\qin\OrderPlaneTicketSystem\.idea" />
-      </set>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="0112" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1mugmTuutbmBzN22AsxFtDDEzHn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1mzVG5av4NM0zD6KUcPNOHiVWWs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="oracle" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="last_opened_file_path" value="F:/Tencent/QQFile/3457489346/FileRecv/ojdbc6.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Application.MainUI">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\qin\OrderPlaneTicketSystem\sql" />
+      <recent name="F:\qin\OrderPlaneTicketSystem\lib" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="MainUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.hunu.UI.MainUI" />
       <module name="OrderPlaneTicketSystem" />
@@ -69,37 +93,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu.hunu.OrderPlaneTicketSystem.MethodDemo" />
-      <module name="OrderPlaneTicketSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.hunu.bean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu.hunu.bean.Test" />
-      <module name="OrderPlaneTicketSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.hunu.bean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainUI" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.MethodDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -116,108 +112,83 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c906ca8b-2a01-41bd-acbb-ea564361d947" name="Default Changelist" comment="" />
-      <created>1610349048468</created>
+      <changelist id="64b5d862-c8cd-4093-abc3-b3e779122c84" name="Default Changelist" comment="" />
+      <created>1610496310334</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1610349048468</updated>
-      <workItem from="1610349050672" duration="3255000" />
-      <workItem from="1610354625222" duration="6237000" />
-      <workItem from="1610368177769" duration="3846000" />
-      <workItem from="1610418478949" duration="13621000" />
+      <updated>1610496310334</updated>
+      <workItem from="1610496316241" duration="6400000" />
     </task>
-    <task id="LOCAL-00001" summary="1、修改了FlightInfo类，增加了setType和totalSet类&#10;2、增加了IFlightDao接口">
-      <created>1610423508756</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1610423508756</updated>
-    </task>
-    <task id="LOCAL-00002" summary="1、修改了FlightInfo类，删减了totalSet属性&#10;2、修改了数据库，增加了数据字典来表示座位">
-      <created>1610438720542</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1610438720542</updated>
-    </task>
-    <task id="LOCAL-00003" summary="1、修改了FlightInfo类，删减了totalSet属性&#10;2、修改了数据库，增加了数据字典来表示座位">
-      <created>1610438850027</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1610438850027</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1、修改了FlightInfo类，增加了setType和totalSet类&#10;2、增加了IFlightDao接口" />
-    <MESSAGE value="1、修改了FlightInfo类，删减了totalSet属性&#10;2、修改了数据库，增加了数据字典来表示座位" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、修改了FlightInfo类，删减了totalSet属性&#10;2、修改了数据库，增加了数据字典来表示座位" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="660" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1610453439032">
+    <state x="0" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610504065759">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="660" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1610453439032" />
-    <state x="519" y="14" width="800" height="841" key="CommitChangelistDialog2" timestamp="1610438848777">
+    <state x="0" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1610504065759" />
+    <state x="346" y="0" key="CommitChangelistDialog2" timestamp="1610510244747">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="519" y="14" width="800" height="841" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610438848777" />
-    <state x="599" y="196" key="FileChooserDialogImpl" timestamp="1610368218706">
+    <state x="346" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610510244747" />
+    <state x="495" y="174" key="FileChooserDialogImpl" timestamp="1610505130109">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="599" y="196" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1610368218706" />
-    <state x="621" y="342" width="382" height="175" key="Github.CreateGistDialog" timestamp="1610367915601">
+    <state x="495" y="174" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1610505130109" />
+    <state width="1557" height="210" key="GridCell.Tab.0.bottom" timestamp="1610506594645">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="621" y="342" width="382" height="175" key="Github.CreateGistDialog/0.0.1600.860@0.0.1600.860" timestamp="1610367915601" />
-    <state x="646" y="346" key="Github.ShareDialog" timestamp="1610423530593">
+    <state width="1557" height="210" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610506594645" />
+    <state width="1557" height="210" key="GridCell.Tab.0.center" timestamp="1610506594645">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="646" y="346" key="Github.ShareDialog/0.0.1600.860@0.0.1600.860" timestamp="1610423530593" />
-    <state x="566" y="133" key="Github.UntrackedFilesDialog" timestamp="1610368344359">
+    <state width="1557" height="210" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610506594645" />
+    <state width="1557" height="210" key="GridCell.Tab.0.left" timestamp="1610506594644">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="566" y="133" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1610368344359" />
-    <state width="1340" height="48" key="GridCell.Tab.0.bottom" timestamp="1610454599162">
+    <state width="1557" height="210" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610506594644" />
+    <state width="1557" height="210" key="GridCell.Tab.0.right" timestamp="1610506594645">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1340" height="48" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610454599162" />
-    <state width="1340" height="48" key="GridCell.Tab.0.center" timestamp="1610454599162">
+    <state width="1557" height="210" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610506594645" />
+    <state width="1557" height="275" key="GridCell.Tab.1.bottom" timestamp="1610506016500">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1340" height="48" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610454599162" />
-    <state width="1340" height="48" key="GridCell.Tab.0.left" timestamp="1610454599162">
+    <state width="1557" height="275" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610506016500" />
+    <state width="1557" height="275" key="GridCell.Tab.1.center" timestamp="1610506016500">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1340" height="48" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610454599162" />
-    <state width="1340" height="48" key="GridCell.Tab.0.right" timestamp="1610454599162">
+    <state width="1557" height="275" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1610506016500" />
+    <state width="1557" height="275" key="GridCell.Tab.1.left" timestamp="1610506016500">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1340" height="48" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610454599162" />
-    <state x="336" y="71" key="SettingsEditor" timestamp="1610452823905">
+    <state width="1557" height="275" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1610506016500" />
+    <state width="1557" height="275" key="GridCell.Tab.1.right" timestamp="1610506016500">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="336" y="71" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610452823905" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1610438906939">
+    <state width="1557" height="275" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1610506016500" />
+    <state x="301" y="8" key="SettingsEditor" timestamp="1610510417081">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1610438906939" />
-    <state x="593" y="94" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610352792934">
+    <state x="301" y="8" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610510417081" />
+    <state x="480" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1610496317585">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="593" y="94" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1600.860@0.0.1600.860" timestamp="1610352792934" />
-    <state x="174" y="39" key="new project wizard" timestamp="1610354585518">
+    <state x="480" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1610496317585" />
+    <state x="39" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1610505193718">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="174" y="39" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1610354585518" />
+    <state x="39" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1610505193718" />
   </component>
 </project>

@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64b5d862-c8cd-4093-abc3-b3e779122c84" name="Default Changelist" comment="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc61.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderPlaneTicketSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderPlaneTicketSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/UI/MainUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/UI/MainUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/FlightInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/FlightInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/IFlightService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/IFlightService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/impl/FlightServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/impl/FlightServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/IFlightDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/IFlightDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/impl/FlightDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/impl/FlightDaoIml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/dao/IFlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/dao/IFlightDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/dao/impl/FlightDaoIml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/dao/impl/FlightDaoIml.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +23,6 @@
     <expand />
     <select />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="OrderPlaneTicketSystem" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -57,7 +39,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mzVG5av4NM0zD6KUcPNOHiVWWs" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -72,7 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ojdbc6.jar!/" />
+    <property name="last_opened_file_path" value="F:/Tencent/QQFile/3457489346/FileRecv/ojdbc6.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -160,26 +142,26 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="346" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610532273874" />
-    <state x="495" y="174" key="FileChooserDialogImpl" timestamp="1610521417877">
+    <state x="495" y="174" key="FileChooserDialogImpl" timestamp="1610539209925">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="495" y="174" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1610521417877" />
-    <state width="1557" height="174" key="GridCell.Tab.0.bottom" timestamp="1610532251241">
+    <state x="495" y="174" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1610539209925" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1610539301723">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="174" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610532251241" />
-    <state width="1557" height="174" key="GridCell.Tab.0.center" timestamp="1610532251241">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610539301723" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1610539301723">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="174" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610532251241" />
-    <state width="1557" height="174" key="GridCell.Tab.0.left" timestamp="1610532251241">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610539301723" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1610539301723">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="174" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610532251241" />
-    <state width="1557" height="174" key="GridCell.Tab.0.right" timestamp="1610532251241">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610539301723" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1610539301723">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="174" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610532251241" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610539301723" />
     <state width="1557" height="275" key="GridCell.Tab.1.bottom" timestamp="1610506016500">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -196,10 +178,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="275" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1610506016500" />
-    <state x="301" y="8" key="SettingsEditor" timestamp="1610521420737">
+    <state x="301" y="8" key="SettingsEditor" timestamp="1610539211480">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="301" y="8" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610521420737" />
+    <state x="301" y="8" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610539211480" />
     <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1610510460500">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

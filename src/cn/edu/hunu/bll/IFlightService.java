@@ -1,11 +1,11 @@
-package cn.edu.hunu.dao;
+package cn.edu.hunu.bll;
 
 import cn.edu.hunu.bean.FlightInfo;
 
 import java.sql.SQLException;
 import java.util.Set;
 
-public interface IFlightDao {
+public interface IFlightService {
 
     void insertFlight(FlightInfo flightInfo) throws SQLException;
     Set<FlightInfo> getAllFlightInfo() throws SQLException;

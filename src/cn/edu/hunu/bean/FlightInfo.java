@@ -3,15 +3,23 @@ package cn.edu.hunu.bean;
 import javax.xml.crypto.Data;
 
 public class FlightInfo {
-    private String id;//
-    private String type; //单程，双程
+    private String id; //主键，UUID
+    private String flightID; //航班编号
     private String planeModel; //飞机型号；
-    private String setType;
-    private int totalSetNum;
+    private int RemainingSeats; //剩余座位数量
     private String departurePlace; //出发地
     private String destination; //目的地
-    private Data departureTime; //出发时间
-    private Data arrivalTime; // 到达时间
+    private String departureTime; //出发时间
+
+    public FlightInfo(String id, String flightID, String planeModel, int remainingSeats, String departurePlace, String destination, String departureTime) {
+        this.id = id;
+        this.flightID = flightID;
+        this.planeModel = planeModel;
+        RemainingSeats = remainingSeats;
+        this.departurePlace = departurePlace;
+        this.destination = destination;
+        this.departureTime = departureTime;
+    }
 
     public String getId() {
         return id;
@@ -19,14 +27,6 @@ public class FlightInfo {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public String getPlaneModel() {
@@ -53,19 +53,40 @@ public class FlightInfo {
         this.destination = destination;
     }
 
-    public Data getDepartureTime() {
+
+    public String getFlightID() {
+        return flightID;
+    }
+
+    public void setFlightID(String flightID) {
+        this.flightID = flightID;
+    }
+
+    public int getRemainingSeats() {
+        return RemainingSeats;
+    }
+
+    public void setRemainingSeats(int remainingSeats) {
+        RemainingSeats = remainingSeats;
+    }
+
+    public String getDepartureTime() {
         return departureTime;
     }
 
-    public void setDepartureTime(Data departureTime) {
+    public void setDepartureTime(String departureTime) {
         this.departureTime = departureTime;
     }
 
-    public Data getArrivalTime() {
-        return arrivalTime;
-    }
-
-    public void setArrivalTime(Data arrivalTime) {
-        this.arrivalTime = arrivalTime;
+    @Override
+    public String toString() {
+        return "FlightInfo{" +
+                "航班编号='" + flightID + '\'' +
+                ", 机型='" + planeModel + '\'' +
+                ", 座位数量=" + RemainingSeats +
+                ", 出发地='" + departurePlace + '\'' +
+                ", 目的地='" + destination + '\'' +
+                ", 出发时间=" + departureTime +
+                '}';
     }
 }

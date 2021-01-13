@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64b5d862-c8cd-4093-abc3-b3e779122c84" name="Default Changelist" comment="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ojdbc6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/UI/MainUI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/FlightInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/IFlightService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/impl/FlightServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/IFlightDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/impl/FlightDaoIml.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/crebas (1).sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc61.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderPlaneTicketSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderPlaneTicketSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/UI/MainUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/UI/MainUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/FlightInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bean/FlightInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/IFlightService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/IFlightService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/impl/FlightServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/bll/impl/FlightServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/IFlightDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/IFlightDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/impl/FlightDaoIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OrderPlaneTicketSystem/cn/edu/hunu/dao/impl/FlightDaoIml.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/dao/IFlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/dao/IFlightDao.java" afterDir="false" />
@@ -42,6 +37,16 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="OrderPlaneTicketSystem" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -67,9 +72,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/Tencent/QQFile/3457489346/FileRecv/ojdbc6.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ojdbc6.jar!/" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
@@ -121,8 +127,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610496310334</updated>
-      <workItem from="1610496316241" duration="6400000" />
+      <workItem from="1610496316241" duration="16263000" />
     </task>
+    <task id="LOCAL-00001" summary="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中">
+      <created>1610510429667</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610510429667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,30 +152,34 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="0" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1610504065759" />
-    <state x="346" y="0" key="CommitChangelistDialog2" timestamp="1610510244747">
+    <state x="420" y="107" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1610521216429">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="346" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610510244747" />
-    <state x="495" y="174" key="FileChooserDialogImpl" timestamp="1610505130109">
+    <state x="420" y="107" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1600.860@0.0.1600.860" timestamp="1610521216429" />
+    <state x="346" y="0" key="CommitChangelistDialog2" timestamp="1610532273874">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="495" y="174" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1610505130109" />
-    <state width="1557" height="210" key="GridCell.Tab.0.bottom" timestamp="1610506594645">
+    <state x="346" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610532273874" />
+    <state x="495" y="174" key="FileChooserDialogImpl" timestamp="1610521417877">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="210" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610506594645" />
-    <state width="1557" height="210" key="GridCell.Tab.0.center" timestamp="1610506594645">
+    <state x="495" y="174" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1610521417877" />
+    <state width="1557" height="174" key="GridCell.Tab.0.bottom" timestamp="1610532251241">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="210" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610506594645" />
-    <state width="1557" height="210" key="GridCell.Tab.0.left" timestamp="1610506594644">
+    <state width="1557" height="174" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610532251241" />
+    <state width="1557" height="174" key="GridCell.Tab.0.center" timestamp="1610532251241">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="210" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610506594644" />
-    <state width="1557" height="210" key="GridCell.Tab.0.right" timestamp="1610506594645">
+    <state width="1557" height="174" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610532251241" />
+    <state width="1557" height="174" key="GridCell.Tab.0.left" timestamp="1610532251241">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="210" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610506594645" />
+    <state width="1557" height="174" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610532251241" />
+    <state width="1557" height="174" key="GridCell.Tab.0.right" timestamp="1610532251241">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="174" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610532251241" />
     <state width="1557" height="275" key="GridCell.Tab.1.bottom" timestamp="1610506016500">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -178,14 +196,26 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="275" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1610506016500" />
-    <state x="301" y="8" key="SettingsEditor" timestamp="1610510417081">
+    <state x="301" y="8" key="SettingsEditor" timestamp="1610521420737">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="301" y="8" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610510417081" />
+    <state x="301" y="8" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610521420737" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1610510460500">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1610510460500" />
     <state x="480" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1610496317585">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="480" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1610496317585" />
+    <state x="562" y="141" key="git4idea.branch.GitSmartOperationDialog" timestamp="1610538401765">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="562" y="141" key="git4idea.branch.GitSmartOperationDialog/0.0.1600.860@0.0.1600.860" timestamp="1610538401765" />
+    <state x="174" y="124" key="new project wizard" timestamp="1610521182993">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="174" y="124" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1610521182993" />
     <state x="39" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1610505193718">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

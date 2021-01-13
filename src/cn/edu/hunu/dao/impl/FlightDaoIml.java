@@ -3,10 +3,9 @@ package cn.edu.hunu.dao.impl;
 import cn.edu.hunu.bean.FlightInfo;
 import cn.edu.hunu.dao.IFlightDao;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import javax.xml.transform.Result;
+import java.sql.*;
+import java.util.HashSet;
 import java.util.Set;
 
 public class FlightDaoIml implements IFlightDao {
@@ -34,8 +33,29 @@ public class FlightDaoIml implements IFlightDao {
     }
 
     @Override
-    public Set<FlightInfo> getAllFlightInfo() {
-        return null;
+    public Set<FlightInfo> getAllFlightInfo() throws SQLException {
+        Set<FlightInfo> allFlightInfo = new HashSet<>();
+        String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+        String username="opts";
+        String password="opts1234";
+        Connection conn = DriverManager.getConnection(url,username,password);
+        String sql = "SELECT * FROM flight";
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        ResultSet rs = pstmt.executeQuery();
+        while(rs.next()){
+            String id = rs.getString("FLIGHT_ID");
+            String flightId = rs.getString("PLANE_TYPE"); //航班编号
+            String planeModel = rs.getString("SEATS_NO"); //飞机型号
+            int RemainingSeats= rs.getInt("TOTAL_SEATS_NUM"); //剩余座位数量
+            String departurePlace= rs.getString("DEPARTURE_AIRPORT"); //出发地
+            String destination= rs.getString("DESTINATION_AIRPORT"); //目的地
+            String departureTime= rs.getString("DEPARTURE_TIME"); //出发时间
+
+            FlightInfo flightInfo = new FlightInfo(id,flightId,planeModel,RemainingSeats,
+                    departurePlace,destination,departureTime);
+            allFlightInfo.add(flightInfo);
+        }
+        return allFlightInfo;
     }
 
     @Override

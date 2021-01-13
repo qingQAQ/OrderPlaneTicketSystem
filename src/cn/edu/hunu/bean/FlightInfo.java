@@ -81,12 +81,12 @@ public class FlightInfo {
     @Override
     public String toString() {
         return "FlightInfo{" +
-                "flightID='" + flightID + '\'' +
-                ", planeModel='" + planeModel + '\'' +
-                ", RemainingSeats=" + RemainingSeats +
-                ", departurePlace='" + departurePlace + '\'' +
-                ", destination='" + destination + '\'' +
-                ", departureTime=" + departureTime +
+                "航班编号='" + flightID + '\'' +
+                ", 机型='" + planeModel + '\'' +
+                ", 座位数量=" + RemainingSeats +
+                ", 出发地='" + departurePlace + '\'' +
+                ", 目的地='" + destination + '\'' +
+                ", 出发时间=" + departureTime +
                 '}';
     }
 }

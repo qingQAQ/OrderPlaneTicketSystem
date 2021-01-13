@@ -8,7 +8,7 @@ import java.util.Set;
 public interface IFlightService {
 
     void insertFlight(FlightInfo flightInfo) throws SQLException;
-    Set<FlightInfo> getAllFlightInfo();
+    Set<FlightInfo> getAllFlightInfo() throws SQLException;
     FlightInfo getFlightInfoDeparTime(String departureTime);
     FlightInfo getFlightInfoDeparturePlace(String departurePlace);
     FlightInfo getFlightInfoDestination(String destination);

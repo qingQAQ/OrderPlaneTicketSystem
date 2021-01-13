@@ -6,7 +6,10 @@ import cn.edu.hunu.bll.impl.FlightServiceImpl;
 
 import java.sql.SQLException;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.UUID;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainUI {
     public static void main(String[] args)  {
@@ -23,9 +26,9 @@ public class MainUI {
 
             int choice = input.nextInt();
             if(choice == 1){
-                String uuid = UUID.randomUUID().toString();
-                System.out.println(uuid.replace("-", ""));
-                String id=uuid.replace("-", "");
+                String id = UUID.randomUUID().toString();
+                System.out.println(id.replace("-", ""));
+                //String id=uuid.replace("-", "");
 
                 System.out.print("请输入航班编号：");
                 String flightId = input.next();
@@ -46,11 +49,36 @@ public class MainUI {
                 try {
                     iFlightService.insertFlight(flightInfo);
                 } catch (SQLException e) {
-                    String erromessage = e.getMessage();
-                    System.out.println(erromessage);
-                    e.printStackTrace();
+
+                    String errMess = e.getMessage();
+                    System.out.println(errMess);
+                    //ORA-12899: value too large for column "OPTS"."FLIGHT"."ID" (actual: 32, maximum: 30)
+                    //ORA-12899: 列 "OPTS"."FLIGHT"."FLIGHT_ID" 的值太大 (实际值: 36, 最大值: 32)
+                    //String pattern = "(\\w+-\\d{5}):(\\s\\w+)+\\s(\"\\w+\")\\.(\"\\w+\")\\.(\"\\w+\")";
+                    String pattern = "\\.(\"\\w+\")\\.(\"\\w+\")"; //正则表达式\w+-\d{5}:\s.\s"\w+"\.("\w+")\.("\w+")
+                    Pattern r = Pattern.compile(pattern); //创建Pattern对象
+                    Matcher m = r.matcher(errMess); //创建Matcher对象
+                    if (m.find()){
+                        String tableName = m.group(1);
+                        String columnName = m.group(2);
+                        System.out.println(tableName + "表的" + columnName + "这一列的值过大，请仔细检查");
+                    }
+
+
                 }
 
+            }
+            else if(choice == 2){
+                IFlightService iFlightService = new FlightServiceImpl();
+                try {
+
+                    Set<FlightInfo> allFlights=iFlightService.getAllFlightInfo();
+                    for(FlightInfo flight:allFlights){
+                        System.out.println(flight);
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
 
 

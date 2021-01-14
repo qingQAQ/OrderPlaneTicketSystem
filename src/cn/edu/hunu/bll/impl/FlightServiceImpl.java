@@ -10,11 +10,11 @@ import java.util.Set;
 
 public class FlightServiceImpl implements IFlightService {
 
-//    IFlightDao iFlightDao;
-//
-//    public FlightServiceImpl(){
-//        iFlightDao=new FlightDaoIml();
-//    }
+    IFlightDao iFlightDao;
+
+    public FlightServiceImpl(){
+        iFlightDao=new FlightDaoIml();
+    }
 
     @Override
     public void insertFlight(FlightInfo flightInfo) throws SQLException {
@@ -25,13 +25,12 @@ public class FlightServiceImpl implements IFlightService {
 
     @Override
     public Set<FlightInfo> getAllFlightInfo() throws SQLException {
-        IFlightDao iFlightDao = new FlightDaoIml();
         return iFlightDao.getAllFlightInfo();
     }
 
     @Override
-    public FlightInfo getFlightInfoDeparTime(String departureTime) {
-        return null;
+    public Set<FlightInfo> getFlightInfoDeparTime(String departureTime) throws SQLException {
+        return iFlightDao.getFlightInfoDeparTime(departureTime);
     }
 
     @Override

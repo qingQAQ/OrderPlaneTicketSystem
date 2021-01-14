@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64b5d862-c8cd-4093-abc3-b3e779122c84" name="Default Changelist" comment="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中">
+    <list default="true" id="64b5d862-c8cd-4093-abc3-b3e779122c84" name="Default Changelist" comment="1、实现了按出发时间查找航班">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/UI/MainUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bean/FlightInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/IFlightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/bll/impl/FlightServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/dao/IFlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/dao/IFlightDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/edu/hunu/dao/impl/FlightDaoIml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/edu/hunu/dao/impl/FlightDaoIml.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +60,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/Tencent/QQFile/3457489346/FileRecv/ojdbc6.jar!/" />
+    <property name="last_opened_file_path" value="F:/群文件/0114" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -110,6 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610496310334</updated>
       <workItem from="1610496316241" duration="16263000" />
+      <workItem from="1610588600422" duration="6411000" />
     </task>
     <task id="LOCAL-00001" summary="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中">
       <created>1610510429667</created>
@@ -118,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610510429667</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1、将原来设置的ID长度还原，不在出错">
+      <created>1610539417699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610539417699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +141,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、完成了insertFlight函数，连接了数据库&#10;2、初步完成了异常处理，可以存入数据库flight表中" />
+    <MESSAGE value="1、将原来设置的ID长度还原，不在出错" />
+    <MESSAGE value="1、实现了按出发时间查找航班" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、实现了按出发时间查找航班" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610504065759">
@@ -138,30 +154,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="420" y="107" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1600.860@0.0.1600.860" timestamp="1610521216429" />
-    <state x="346" y="0" key="CommitChangelistDialog2" timestamp="1610532273874">
+    <state x="346" y="0" key="CommitChangelistDialog2" timestamp="1610614666827">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="346" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610532273874" />
-    <state x="495" y="174" key="FileChooserDialogImpl" timestamp="1610539209925">
+    <state x="346" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1610614666827" />
+    <state x="495" y="174" key="FileChooserDialogImpl" timestamp="1610614581412">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="495" y="174" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1610539209925" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1610539301723">
+    <state x="495" y="174" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1610614581412" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1610592805496">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610539301723" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1610539301723">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1610592805496" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1610592805496">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610539301723" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1610539301723">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1610592805496" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1610592805496">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610539301723" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1610539301723">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1610592805496" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1610592805496">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610539301723" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1610592805496" />
     <state width="1557" height="275" key="GridCell.Tab.1.bottom" timestamp="1610506016500">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -178,18 +194,18 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="275" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1610506016500" />
-    <state x="301" y="8" key="SettingsEditor" timestamp="1610539211480">
+    <state x="301" y="8" key="SettingsEditor" timestamp="1610615039964">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="301" y="8" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610539211480" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1610510460500">
+    <state x="301" y="8" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1610615039964" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1610539422488">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1610510460500" />
-    <state x="480" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1610496317585">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1610539422488" />
+    <state x="480" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1610588601266">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="480" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1610496317585" />
+    <state x="480" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1610588601266" />
     <state x="562" y="141" key="git4idea.branch.GitSmartOperationDialog" timestamp="1610538401765">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

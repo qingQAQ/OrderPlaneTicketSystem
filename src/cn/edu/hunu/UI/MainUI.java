@@ -80,6 +80,33 @@ public class MainUI {
                     e.printStackTrace();
                 }
             }
+            else if (choice == 3) {
+                System.out.println("输入相应的编号选择您要查询航班的方式：");
+                System.out.println("1，按起飞时间查询");
+                System.out.println("2，按空座信息查询");
+                System.out.println("3，按起飞第查询");
+                System.out.println("4，按目的地查询");
+                int choose = input.nextInt();
+                if (choose == 1) {
+                    System.out.println("请输入起飞时间：");
+                    String departureTime = input.next();
+                    IFlightService iFlightService = new FlightServiceImpl();
+                    try {
+                        Set<FlightInfo> flightInfo = iFlightService.getFlightInfoDeparTime(departureTime);
+                        if(flightInfo != null){
+                            System.out.println("查询结果：" );
+                            for(FlightInfo flight:flightInfo){
+                                System.out.println(flight);
+                            }
+                        }else{
+                            System.out.println("没有查询到该时间的航班");
+                        }
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            }
 
 
         }

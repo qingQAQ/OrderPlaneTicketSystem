@@ -9,7 +9,7 @@ public interface IFlightService {
 
     void insertFlight(FlightInfo flightInfo) throws SQLException;
     Set<FlightInfo> getAllFlightInfo() throws SQLException;
-    FlightInfo getFlightInfoDeparTime(String departureTime);
+    Set<FlightInfo> getFlightInfoDeparTime(String departureTime) throws SQLException;
     FlightInfo getFlightInfoDeparturePlace(String departurePlace);
     FlightInfo getFlightInfoDestination(String destination);
     void updateFlightInfo(FlightInfo flightInfo);

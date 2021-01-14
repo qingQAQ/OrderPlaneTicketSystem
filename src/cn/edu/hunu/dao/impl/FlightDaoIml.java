@@ -43,9 +43,9 @@ public class FlightDaoIml implements IFlightDao {
         PreparedStatement pstmt = conn.prepareStatement(sql);
         ResultSet rs = pstmt.executeQuery();
         while(rs.next()){
-            String id = rs.getString("FLIGHT_ID");
-            String flightId = rs.getString("PLANE_TYPE"); //航班编号
-            String planeModel = rs.getString("SEATS_NO"); //飞机型号
+            String id = rs.getString("ID");
+            String flightId = rs.getString("FLIGHT_ID"); //航班编号
+            String planeModel = rs.getString("PLANE_TYPE"); //飞机型号
             int RemainingSeats= rs.getInt("TOTAL_SEATS_NUM"); //剩余座位数量
             String departurePlace= rs.getString("DEPARTURE_AIRPORT"); //出发地
             String destination= rs.getString("DESTINATION_AIRPORT"); //目的地
@@ -59,8 +59,34 @@ public class FlightDaoIml implements IFlightDao {
     }
 
     @Override
-    public FlightInfo getFlightInfoDeparTime(String departureTime) {
-        return null;
+    public Set<FlightInfo> getFlightInfoDeparTime(String departureTime) throws SQLException {
+        Set<FlightInfo> allFlightInfo = new HashSet<>();
+        String sql = "SELECT FLIGHT_ID,PLANE_TYPE,\n" +
+                "TOTAL_SEATS_NUM,DEPARTURE_AIRPORT,\n" +
+                "DESTINATION_AIRPORT,DEPARTURE_TIME FROM flight \n" +
+                "WHERE DEPARTURE_TIME=?";
+        String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+        String username = "opts";
+        String password = "opts1234";
+        Connection conn = DriverManager.getConnection(url, username, password);
+        FlightInfo flight = null;
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1,departureTime);
+        ResultSet rs = pstmt.executeQuery();
+        while (rs.next()) {
+            String flightId = rs.getString("FLIGHT_ID");
+            String planeType = rs.getString("PLANE_TYPE");
+            int currentSeatsNum = rs.getInt("TOTAL_SEATS_NUM");
+            String departureAirPort = rs.getString("DEPARTURE_AIRPORT");
+            String destinationAirPort = rs.getString("DESTINATION_AIRPORT");
+            String departureTimes = rs.getString("DEPARTURE_TIME");
+
+            flight = new FlightInfo(flightId, planeType, currentSeatsNum,
+                    departureAirPort, destinationAirPort, departureTimes);
+            allFlightInfo.add(flight);
+        }
+        return allFlightInfo;
+
     }
 
     @Override
